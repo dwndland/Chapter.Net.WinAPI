@@ -7,33 +7,34 @@
 using System;
 using System.Text;
 
-namespace Chapter.Net.WinAPI;
-
-public interface IUser32
+namespace Chapter.Net.WinAPI
 {
-    bool SetForegroundWindow(IntPtr hWnd);
+    public interface IUser32
+    {
+        bool SetForegroundWindow(IntPtr hWnd);
 
-    bool ShowWindow(IntPtr hWnd, WindowShowStyle nCmdShow);
+        bool ShowWindow(IntPtr hWnd, WindowShowStyle nCmdShow);
 
-    int DestroyIcon(IntPtr hIcon);
+        int DestroyIcon(IntPtr hIcon);
 
-    uint GetDoubleClickTime();
+        uint GetDoubleClickTime();
 
-    IntPtr SetWindowsHookEx(int hookId, User32.Proc callbackFunction, IntPtr moduleHandle, uint threadId);
+        IntPtr SetWindowsHookEx(int hookId, User32.Proc callbackFunction, IntPtr moduleHandle, uint threadId);
 
-    bool UnhookWindowsHookEx(IntPtr hookId);
+        bool UnhookWindowsHookEx(IntPtr hookId);
 
-    IntPtr CallNextHookEx(IntPtr hookId, int code, IntPtr wParam, IntPtr lParam);
+        IntPtr CallNextHookEx(IntPtr hookId, int code, IntPtr wParam, IntPtr lParam);
 
-    int LoadString(IntPtr hInstance, uint stringId, StringBuilder lpBuffer, int nBufferMax);
+        int LoadString(IntPtr hInstance, uint stringId, StringBuilder lpBuffer, int nBufferMax);
 
-    int GetWindowLong(IntPtr hwnd, int index);
+        int GetWindowLong(IntPtr hwnd, int index);
 
-    int SetWindowLong(IntPtr hwnd, int index, int newStyle);
+        int SetWindowLong(IntPtr hwnd, int index, int newStyle);
 
-    bool SetWindowPos(IntPtr hwnd, IntPtr hwndInsertAfter, int x, int y, int width, int height, uint flags);
+        bool SetWindowPos(IntPtr hwnd, IntPtr hwndInsertAfter, int x, int y, int width, int height, uint flags);
 
-    IntPtr GetSystemMenu(IntPtr windowHandle, bool revert);
+        IntPtr GetSystemMenu(IntPtr windowHandle, bool revert);
 
-    bool EnableMenuItem(IntPtr menuHandle, uint itemId, uint enable);
+        bool EnableMenuItem(IntPtr menuHandle, uint itemId, uint enable);
+    }
 }

@@ -4,12 +4,13 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-namespace Chapter.Net.WinAPI.Data;
-
-public struct SWP
+namespace Chapter.Net.WinAPI.Data
 {
-    public const int NOMOVE = 0x0002;
-    public const int NOSIZE = 0x0001;
-    public const int NOZORDER = 0x0004;
-    public const int FRAMECHANGED = 0x0020;
+    public struct SWP
+    {
+        public const int NOMOVE = 0x0002;
+        public const int NOSIZE = 0x0001;
+        public const int NOZORDER = 0x0004;
+        public const int FRAMECHANGED = 0x0020;
+    }
 }

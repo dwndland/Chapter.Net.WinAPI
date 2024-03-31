@@ -4,12 +4,13 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-namespace Chapter.Net.WinAPI.Data;
-
-public struct WS
+namespace Chapter.Net.WinAPI.Data
 {
-    public const int EX_DLGMODALFRAME = 0x0001;
-    public const int MAXIMIZEBOX = 0x10000;
-    public const int MINIMIZEBOX = 0x20000;
-    public const int SYSMENU = 0x80000;
+    public struct WS
+    {
+        public const int EX_DLGMODALFRAME = 0x0001;
+        public const int MAXIMIZEBOX = 0x10000;
+        public const int MINIMIZEBOX = 0x20000;
+        public const int SYSMENU = 0x80000;
+    }
 }

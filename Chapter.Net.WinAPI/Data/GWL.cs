@@ -4,10 +4,11 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-namespace Chapter.Net.WinAPI.Data;
-
-public struct GWL
+namespace Chapter.Net.WinAPI.Data
 {
-    public const int EXSTYLE = -20;
-    public const int STYLE = -16;
+    public struct GWL
+    {
+        public const int EXSTYLE = -20;
+        public const int STYLE = -16;
+    }
 }

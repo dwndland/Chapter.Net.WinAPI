@@ -8,12 +8,13 @@ using System;
 
 // ReSharper disable once CheckNamespace
 
-namespace Chapter.Net.WinAPI;
-
-public class DwmapiWrapper : IDwmapi
+namespace Chapter.Net.WinAPI
 {
-    public int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize)
+    public class DwmapiWrapper : IDwmapi
     {
-        return Dwmapi.DwmSetWindowAttribute(hwnd, attr, ref attrValue, attrSize);
+        public int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize)
+        {
+            return Dwmapi.DwmSetWindowAttribute(hwnd, attr, ref attrValue, attrSize);
+        }
     }
 }

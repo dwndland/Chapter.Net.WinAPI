@@ -4,9 +4,10 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-namespace Chapter.Net.WinAPI.Data;
-
-public struct SC
+namespace Chapter.Net.WinAPI.Data
 {
-    public const int CLOSE = 0xF060;
+    public struct SC
+    {
+        public const int CLOSE = 0xF060;
+    }
 }
