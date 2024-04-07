@@ -13,6 +13,7 @@ But of course, it it contains anything you may need in your application. Feel fr
 - **Kernel32:** Access to WinAPI methods within the "kernel32.dll".
 - **Shell32:** Access to WinAPI methods within the "shell32.dll".
 - **User32:** Access to WinAPI methods within the "user32.dll".
+- **UxTheme:** Access to WinAPI methods within the "uxtheme.dll".
 - **Data:** Values and structures to use within any of those above. Like WM (WindowMessages), WH (WindowHandle) and many more.
 
 ## Getting Started
