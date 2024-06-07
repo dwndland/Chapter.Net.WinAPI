@@ -7,14 +7,13 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Chapter.Net.WinAPI
-{
-    public static class Kernel32
-    {
-        [DllImport("kernel32.dll")]
-        public static extern IntPtr LoadLibrary(string lpFileName);
+namespace Chapter.Net.WinAPI;
 
-        [DllImport("kernel32.dll")]
-        public static extern IntPtr GetModuleHandle(string moduleName);
-    }
+public static class Kernel32
+{
+    [DllImport("kernel32.dll")]
+    public static extern IntPtr LoadLibrary(string lpFileName);
+
+    [DllImport("kernel32.dll")]
+    public static extern IntPtr GetModuleHandle(string moduleName);
 }

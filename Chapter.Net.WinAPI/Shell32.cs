@@ -7,11 +7,10 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Chapter.Net.WinAPI
+namespace Chapter.Net.WinAPI;
+
+public static class Shell32
 {
-    public static class Shell32
-    {
-        [DllImport("shell32.dll")]
-        public static extern IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbSizeFileInfo, uint uFlags);
-    }
+    [DllImport("shell32.dll")]
+    public static extern IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbSizeFileInfo, uint uFlags);
 }

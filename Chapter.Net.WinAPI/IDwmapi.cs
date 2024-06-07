@@ -6,10 +6,9 @@
 
 using System;
 
-namespace Chapter.Net.WinAPI
+namespace Chapter.Net.WinAPI;
+
+public interface IDwmapi
 {
-    public interface IDwmapi
-    {
-        int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
-    }
+    int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
 }

@@ -6,12 +6,11 @@
 
 using System;
 
-namespace Chapter.Net.WinAPI
-{
-    public interface IKernel32
-    {
-        IntPtr LoadLibrary(string lpFileName);
+namespace Chapter.Net.WinAPI;
 
-        IntPtr GetModuleHandle(string moduleName);
-    }
+public interface IKernel32
+{
+    IntPtr LoadLibrary(string lpFileName);
+
+    IntPtr GetModuleHandle(string moduleName);
 }

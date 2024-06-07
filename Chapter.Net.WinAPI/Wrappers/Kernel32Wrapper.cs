@@ -8,18 +8,17 @@ using System;
 
 // ReSharper disable once CheckNamespace
 
-namespace Chapter.Net.WinAPI
-{
-    public class Kernel32Wrapper : IKernel32
-    {
-        public IntPtr LoadLibrary(string lpFileName)
-        {
-            return Kernel32.LoadLibrary(lpFileName);
-        }
+namespace Chapter.Net.WinAPI;
 
-        public IntPtr GetModuleHandle(string moduleName)
-        {
-            return Kernel32.GetModuleHandle(moduleName);
-        }
+public class Kernel32Wrapper : IKernel32
+{
+    public IntPtr LoadLibrary(string lpFileName)
+    {
+        return Kernel32.LoadLibrary(lpFileName);
+    }
+
+    public IntPtr GetModuleHandle(string moduleName)
+    {
+        return Kernel32.GetModuleHandle(moduleName);
     }
 }

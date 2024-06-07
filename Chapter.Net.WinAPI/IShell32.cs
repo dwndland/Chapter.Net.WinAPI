@@ -6,10 +6,9 @@
 
 using System;
 
-namespace Chapter.Net.WinAPI
+namespace Chapter.Net.WinAPI;
+
+public interface IShell32
 {
-    public interface IShell32
-    {
-        IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbSizeFileInfo, uint uFlags);
-    }
+    IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbSizeFileInfo, uint uFlags);
 }

@@ -4,11 +4,10 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-namespace Chapter.Net.WinAPI.Data
+namespace Chapter.Net.WinAPI.Data;
+
+public struct MF
 {
-    public struct MF
-    {
-        public const int BYCOMMAND = 0x00000000;
-        public const int GRAYED = 0x00000001;
-    }
+    public const int BYCOMMAND = 0x00000000;
+    public const int GRAYED = 0x00000001;
 }

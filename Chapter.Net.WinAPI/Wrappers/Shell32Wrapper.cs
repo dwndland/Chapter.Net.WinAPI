@@ -8,13 +8,12 @@ using System;
 
 // ReSharper disable once CheckNamespace
 
-namespace Chapter.Net.WinAPI
+namespace Chapter.Net.WinAPI;
+
+public class Shell32Wrapper : IShell32
 {
-    public class Shell32Wrapper : IShell32
+    public IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbSizeFileInfo, uint uFlags)
     {
-        public IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbSizeFileInfo, uint uFlags)
-        {
-            return Shell32.SHGetFileInfo(pszPath, dwFileAttributes, ref psfi, cbSizeFileInfo, uFlags);
-        }
+        return Shell32.SHGetFileInfo(pszPath, dwFileAttributes, ref psfi, cbSizeFileInfo, uFlags);
     }
 }

@@ -8,33 +8,32 @@ using System;
 
 // ReSharper disable once CheckNamespace
 
-namespace Chapter.Net.WinAPI
+namespace Chapter.Net.WinAPI;
+
+public class UxThemeWrapper : IUxTheme
 {
-    public class UxThemeWrapper : IUxTheme
+    public uint GetImmersiveUserColorSetPreference(bool forceCheckRegistry, bool skipCheckOnFail)
     {
-        public uint GetImmersiveUserColorSetPreference(bool forceCheckRegistry, bool skipCheckOnFail)
-        {
-            return UxTheme.GetImmersiveUserColorSetPreference(forceCheckRegistry, skipCheckOnFail);
-        }
+        return UxTheme.GetImmersiveUserColorSetPreference(forceCheckRegistry, skipCheckOnFail);
+    }
 
-        public uint GetImmersiveColorSetCount()
-        {
-            return UxTheme.GetImmersiveColorSetCount();
-        }
+    public uint GetImmersiveColorSetCount()
+    {
+        return UxTheme.GetImmersiveColorSetCount();
+    }
 
-        public uint GetImmersiveColorFromColorSetEx(uint immersiveColorSet, uint immersiveColorType, bool ignoreHighContrast, uint highContrastCacheMode)
-        {
-            return UxTheme.GetImmersiveColorFromColorSetEx(immersiveColorSet, immersiveColorType, ignoreHighContrast, highContrastCacheMode);
-        }
+    public uint GetImmersiveColorFromColorSetEx(uint immersiveColorSet, uint immersiveColorType, bool ignoreHighContrast, uint highContrastCacheMode)
+    {
+        return UxTheme.GetImmersiveColorFromColorSetEx(immersiveColorSet, immersiveColorType, ignoreHighContrast, highContrastCacheMode);
+    }
 
-        public uint GetImmersiveColorTypeFromName(IntPtr name)
-        {
-            return UxTheme.GetImmersiveColorTypeFromName(name);
-        }
+    public uint GetImmersiveColorTypeFromName(IntPtr name)
+    {
+        return UxTheme.GetImmersiveColorTypeFromName(name);
+    }
 
-        public IntPtr GetImmersiveColorNamedTypeByIndex(uint index)
-        {
-            return UxTheme.GetImmersiveColorNamedTypeByIndex(index);
-        }
+    public IntPtr GetImmersiveColorNamedTypeByIndex(uint index)
+    {
+        return UxTheme.GetImmersiveColorNamedTypeByIndex(index);
     }
 }

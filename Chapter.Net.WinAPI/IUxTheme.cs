@@ -6,18 +6,17 @@
 
 using System;
 
-namespace Chapter.Net.WinAPI
+namespace Chapter.Net.WinAPI;
+
+public interface IUxTheme
 {
-    public interface IUxTheme
-    {
-        uint GetImmersiveUserColorSetPreference(bool forceCheckRegistry, bool skipCheckOnFail);
+    uint GetImmersiveUserColorSetPreference(bool forceCheckRegistry, bool skipCheckOnFail);
 
-        uint GetImmersiveColorSetCount();
+    uint GetImmersiveColorSetCount();
 
-        uint GetImmersiveColorFromColorSetEx(uint immersiveColorSet, uint immersiveColorType, bool ignoreHighContrast, uint highContrastCacheMode);
+    uint GetImmersiveColorFromColorSetEx(uint immersiveColorSet, uint immersiveColorType, bool ignoreHighContrast, uint highContrastCacheMode);
 
-        uint GetImmersiveColorTypeFromName(IntPtr name);
+    uint GetImmersiveColorTypeFromName(IntPtr name);
 
-        IntPtr GetImmersiveColorNamedTypeByIndex(uint index);
-    }
+    IntPtr GetImmersiveColorNamedTypeByIndex(uint index);
 }
