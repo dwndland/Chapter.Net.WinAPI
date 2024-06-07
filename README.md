@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/dwndland/Chapter.Net.WinAPI/master/Icon.png" alt="logo" width="64"/>
+<img src="https://raw.githubusercontent.com/dwndlnd/Chapter.Net.WinAPI/master/Icon.png" alt="logo" width="64"/>
 
 # Chapter.Net.WinAPI Library
 
@@ -106,7 +106,7 @@ But of course, it it contains anything you may need in your application. Feel fr
 
 ## Links
 * [NuGet](https://www.nuget.org/packages/Chapter.Net.WinAPI)
-* [GitHub](https://github.com/dwndland/Chapter.Net.WinAPI)
+* [GitHub](https://github.com/dwndlnd/Chapter.Net.WinAPI)
 
 ## License
 Copyright (c) David Wendland. All rights reserved.
