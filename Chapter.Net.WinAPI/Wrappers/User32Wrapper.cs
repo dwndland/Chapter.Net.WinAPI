@@ -77,4 +77,19 @@ public class User32Wrapper : IUser32
     {
         return User32.EnableMenuItem(menuHandle, itemId, enable);
     }
+
+    public int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, StringBuilder pwszBuff, int cchBuff, uint wFlags)
+    {
+        return User32.ToUnicode(wVirtKey, wScanCode, lpKeyState, pwszBuff, cchBuff, wFlags);
+    }
+
+    public bool GetKeyboardState(byte[] lpKeyState)
+    {
+        return User32.GetKeyboardState(lpKeyState);
+    }
+
+    public uint MapVirtualKey(uint uCode, MAPVK uMapType)
+    {
+        return User32.MapVirtualKey(uCode, uMapType);
+    }
 }

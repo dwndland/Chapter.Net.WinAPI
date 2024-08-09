@@ -5,6 +5,7 @@
 // -----------------------------------------------------------------------------------------------------------------
 
 using System;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace Chapter.Net.WinAPI;
@@ -36,4 +37,10 @@ public interface IUser32
     IntPtr GetSystemMenu(IntPtr windowHandle, bool revert);
 
     bool EnableMenuItem(IntPtr menuHandle, uint itemId, uint enable);
+
+    int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, [Out][MarshalAs(UnmanagedType.LPWStr, SizeParamIndex = 4)] StringBuilder pwszBuff, int cchBuff, uint wFlags);
+
+    bool GetKeyboardState(byte[] lpKeyState);
+
+    uint MapVirtualKey(uint uCode, MAPVK uMapType);
 }
