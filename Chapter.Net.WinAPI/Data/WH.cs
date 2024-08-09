@@ -6,7 +6,7 @@
 
 // ReSharper disable once CheckNamespace
 
-namespace Chapter.Net.WinAPI.Data;
+namespace Chapter.Net.WinAPI;
 
 public enum WH
 {

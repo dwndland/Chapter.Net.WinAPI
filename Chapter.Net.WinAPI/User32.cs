@@ -53,4 +53,13 @@ public static class User32
 
     [DllImport("user32.dll")]
     public static extern bool EnableMenuItem(IntPtr menuHandle, uint itemId, uint enable);
+
+    [DllImport("user32.dll")]
+    public static extern int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, [Out][MarshalAs(UnmanagedType.LPWStr, SizeParamIndex = 4)] StringBuilder pwszBuff, int cchBuff, uint wFlags);
+
+    [DllImport("user32.dll")]
+    public static extern bool GetKeyboardState(byte[] lpKeyState);
+
+    [DllImport("user32.dll")]
+    public static extern uint MapVirtualKey(uint uCode, MAPVK uMapType);
 }

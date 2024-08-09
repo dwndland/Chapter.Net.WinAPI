@@ -4,7 +4,9 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-namespace Chapter.Net.WinAPI.Data;
+// ReSharper disable once CheckNamespace
+
+namespace Chapter.Net.WinAPI;
 
 public struct WM
 {
