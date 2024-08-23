@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------------------------------------------------
-// <copyright file="User32.cs" company="my-libraries">
+// <copyright file="User32.cs" company="dwndland">
 //     Copyright (c) David Wendland. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ public static class User32
     public static extern bool EnableMenuItem(IntPtr menuHandle, uint itemId, uint enable);
 
     [DllImport("user32.dll")]
-    public static extern int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, [Out][MarshalAs(UnmanagedType.LPWStr, SizeParamIndex = 4)] StringBuilder pwszBuff, int cchBuff, uint wFlags);
+    public static extern int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, [Out] [MarshalAs(UnmanagedType.LPWStr, SizeParamIndex = 4)] StringBuilder pwszBuff, int cchBuff, uint wFlags);
 
     [DllImport("user32.dll")]
     public static extern bool GetKeyboardState(byte[] lpKeyState);

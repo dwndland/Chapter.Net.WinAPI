@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------------------------------------------------
-// <copyright file="IUser32.cs" company="my-libraries">
+// <copyright file="IUser32.cs" company="dwndland">
 //     Copyright (c) David Wendland. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ public interface IUser32
 
     bool EnableMenuItem(IntPtr menuHandle, uint itemId, uint enable);
 
-    int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, [Out][MarshalAs(UnmanagedType.LPWStr, SizeParamIndex = 4)] StringBuilder pwszBuff, int cchBuff, uint wFlags);
+    int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpKeyState, [Out] [MarshalAs(UnmanagedType.LPWStr, SizeParamIndex = 4)] StringBuilder pwszBuff, int cchBuff, uint wFlags);
 
     bool GetKeyboardState(byte[] lpKeyState);
 
