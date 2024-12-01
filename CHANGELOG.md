@@ -7,15 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0] - 2024-12-01
+### Added
+- Added .net 9 to the supported .net versions.
+### Supported .Net Versions
+- .Net 8
+- .Net 9
+
 ## [2.1.0] - 2024-08-09
 ### Added
 - Added User32 features needed to map virtual keys to char.
 ### Fixed
 - Fixed namespace of some structures.
+### Supported .Net Versions
+- .Net 8
 
 ## [2.0.0] - 2024-06-07
 ### Changed
 - Update to support .Net 8 only.
+### Supported .Net Versions
+- .Net 8
 
 ## [1.2.0] - 2024-04-07
 ### Added
