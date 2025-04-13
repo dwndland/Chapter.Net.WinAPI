@@ -4,8 +4,8 @@
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <Version>2.2.0</Version>
     <Authors>David Wendland</Authors>
-    <Description>Chapter.Net.WinAPI provides access to native WinAPI commands.</Description>
-    <Copyright>Copyright (c) 2024 David Wendland</Copyright>
+    <Description>Chapter.Net.WinAPI is an internal library that provides low-level WinAPI bindings used by other Chapter libraries; it is not intended for standalone use and remains incomplete by design.</Description>
+    <Copyright>Copyright (c) 2025 David Wendland</Copyright>
     <PackageProjectUrl>https://github.com/dwndland/Chapter.Net.WinAPI</PackageProjectUrl>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>

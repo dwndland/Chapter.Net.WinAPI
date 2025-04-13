@@ -3,10 +3,7 @@
 # Chapter.Net.WinAPI Library
 
 ## Overview
-During development of the Chapter libraries, it happens easily from time to time that native WinAPI calls must be made.
-Thats the reason why this Chapter.Net.WinAPI library exists.
-**Note:** The Chapter.Net.WinAPI is far from complete, it contains only methods needed for any other Chapter.Net libraries and it will continue grow that way only.
-But of course, it it contains anything you may need in your application. Feel free to use it.
+Chapter.Net.WinAPI is an internal library that provides low-level WinAPI bindings used by other Chapter libraries; it is not intended for standalone use and remains incomplete by design.
 
 ## Features
 - **Dwmapi:** Access to the WinAPI methods within the "dwmapi.dll"
